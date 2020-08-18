@@ -1,0 +1,7 @@
+<h1>Most Recent</h1>
+{% for str in allstrings|slice:'10' %}
+    <li>{{ str.user_input }}</li>
+{% endfor %}
+
+<!-- https://stackoverflow.com/questions/2962203/how-to-retrieve-the-first-10-elements-in-a-template-variable -->
+<!-- ^used this for the slicing part -->
