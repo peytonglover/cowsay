@@ -16,7 +16,7 @@ def index(request):
             )
             form = InputForm()
             return render(request, 'index.html', {'form': form, 'result': result.stdout})
-            
+    form = InputForm()
     return render(request, 'index.html', {'form': form})
 
 def history(request):
